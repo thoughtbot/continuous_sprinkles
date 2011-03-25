@@ -1,4 +1,5 @@
 require 'config'
+require 'packages/apache'
 require 'packages/hudson'
 require 'packages/ruby'
 
