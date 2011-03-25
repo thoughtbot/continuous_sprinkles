@@ -1,5 +1,3 @@
-## Defines available packages
-
 package :ruby do
   description 'Ruby Virtual Machine'
   version '1.8.7'
