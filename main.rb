@@ -1,3 +1,5 @@
+require 'config'
+require 'packages/hudson'
 require 'packages/ruby'
 
 deployment do
@@ -13,6 +15,7 @@ deployment do
 end
 
 policy :ci, :roles => :master do
+  requires :hudson
   requires :ruby
   requires :rubygems
 end
