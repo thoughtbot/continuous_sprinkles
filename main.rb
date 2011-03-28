@@ -1,6 +1,6 @@
 require 'config'
 require 'packages/apache'
-require 'packages/hudson'
+require 'packages/jenkins'
 require 'packages/ruby'
 require 'packages/mysql'
 require 'packages/postgres'
@@ -22,7 +22,7 @@ deployment do
 end
 
 policy :ci, :roles => :master do
-  requires :hudson
+  requires :jenkins
   requires :git
   requires :ruby
   requires :rubygems

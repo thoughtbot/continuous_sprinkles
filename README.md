@@ -1,11 +1,11 @@
 Continuous Sprinkles
 ====================
 
-Continuous Sprinkles is a [Sprinkle](https://github.com/crafterm/sprinkle) recipe to setup a Hudson CI server for Ruby development. It provides:
+Continuous Sprinkles is a [Sprinkle](https://github.com/crafterm/sprinkle) recipe to setup a Jenkins CI server for Ruby development. It provides:
 
-* Hudson
+* Jenkins
 * Git
-* Apache proxy to Hudson
+* Apache proxy to Jenkins
 * MySQL
 * Postgres
 * Redis

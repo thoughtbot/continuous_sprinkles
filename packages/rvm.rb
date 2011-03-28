@@ -1,7 +1,7 @@
 package :rvm do
   description 'Ruby Version Manager'
   transfer "assets/rvm_config", "/tmp" do
-    post :install, %{sudo -u hudson -H bash /tmp/rvm_config}
+    post :install, %{sudo -u jenkins -H bash /tmp/rvm_config}
   end
   requires :bashrc, :curl
 end
@@ -9,7 +9,7 @@ end
 package :bashrc do
   description "~/.bashrc for rvm"
   transfer "assets/bashrc", "/tmp" do
-    post :install, %{mv /tmp/bashrc /var/lib/hudson/.bashrc}
+    post :install, %{mv /tmp/bashrc /var/lib/jenkins/.bashrc}
   end
 end
 
