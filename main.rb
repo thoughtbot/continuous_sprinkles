@@ -5,6 +5,7 @@ require 'packages/ruby'
 require 'packages/mysql'
 require 'packages/postgres'
 require 'packages/redis'
+require 'packages/iptables'
 
 deployment do
   delivery :capistrano do
@@ -25,5 +26,6 @@ policy :ci, :roles => :master do
   requires :mysql
   requires :postgres
   requires :redis
+  requires :iptables
 end
 

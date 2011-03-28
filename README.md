@@ -9,6 +9,7 @@ Continuous Sprinkles is a [Sprinkle](https://github.com/crafterm/sprinkle) recip
 * Postgres
 * Redis
 * Ruby
+* IPtables rules
 
 Usage
 -----
