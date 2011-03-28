@@ -1,0 +1,2 @@
+#!/bin/bash
+bash < <(curl -B http://rvm.beginrescueend.com/install/rvm)
