@@ -9,6 +9,7 @@ Continuous Sprinkles is a [Sprinkle](https://github.com/crafterm/sprinkle) recip
 * MySQL
 * Postgres
 * Redis
+* Mongodb
 * Ruby
 * RVM
 * IPtables rules

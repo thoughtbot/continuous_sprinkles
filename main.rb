@@ -4,6 +4,7 @@ require 'packages/jenkins'
 require 'packages/ruby'
 require 'packages/mysql'
 require 'packages/postgres'
+require 'packages/mongodb'
 require 'packages/redis'
 require 'packages/iptables'
 require 'packages/rvm'
@@ -22,14 +23,15 @@ deployment do
 end
 
 policy :ci, :roles => :master do
+  requires :iptables
   requires :jenkins
   requires :git
   requires :ruby
   requires :rubygems
+  requires :rvm
   requires :mysql
   requires :postgres
   requires :redis
-  requires :iptables
-  requires :rvm
+  requires :mongodb
 end
 
