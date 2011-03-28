@@ -19,11 +19,11 @@ deployment do
 end
 
 policy :ci, :roles => :master do
-  # requires :hudson
-  # requires :ruby
-  # requires :rubygems
-  # requires :mysql
-  # requires :postgres
+  requires :hudson
+  requires :ruby
+  requires :rubygems
+  requires :mysql
+  requires :postgres
   requires :redis
 end
 

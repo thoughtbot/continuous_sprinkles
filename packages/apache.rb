@@ -5,4 +5,7 @@ package :apache do
       %{a2dissite 000-default}
     ]
   end
+  verify do
+    has_apt "apache2"
+  end
 end

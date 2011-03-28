@@ -12,7 +12,7 @@ package :redis do
   end
   requires :redis_conf
   verify do
-    has_file "/usr/local/bin/redis-server"
+    has_executable "redis-server"
   end
 end
 
@@ -21,5 +21,8 @@ package :redis_conf do
   transfer "assets/redis.conf", "/tmp" do
     pre :install, %{mkdir -p /etc/redis}
     post :install, %{mv /tmp/redis.conf /etc/redis/6379.conf}
+  end
+  verify do
+    has_file "/etc/redis/6379.conf"
   end
 end
