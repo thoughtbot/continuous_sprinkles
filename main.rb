@@ -9,6 +9,7 @@ require 'packages/redis'
 require 'packages/iptables'
 require 'packages/rvm'
 require 'packages/git'
+require 'packages/rvm_rubies'
 
 deployment do
   delivery :capistrano do
@@ -29,6 +30,7 @@ policy :ci, :roles => :master do
   requires :ruby
   requires :rubygems
   requires :rvm
+  requires :rvm_rubies
   requires :mysql
   requires :postgres
   requires :redis

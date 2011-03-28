@@ -21,7 +21,11 @@ You need to install Sprinkle:
 
     gem install sprinkle
 
-Check out the Continuous Sprinkles repository, and edit config.rb to use your CI's host name. Then cd into the checked out Continuous Sprinkles repository, and run:
+Check out the Continuous Sprinkles repository, copy the config.example.rb to config.rb, and edit config.rb to use your CI's host name:
+
+    HOST = 'ci.mydomain.com'
+
+ Then cd into the checked out Continuous Sprinkles repository, and run:
 
     sprinkle -s main.rb
 
