@@ -1,3 +1,9 @@
+DEPRECATED
+==========
+
+This Sprinkle script is no longer maintained. If you would like to take it over
+please fork it and send an email to [thoughtbot](mailto:support@thoughtbot.com).
+
 Continuous Sprinkles
 ====================
 
